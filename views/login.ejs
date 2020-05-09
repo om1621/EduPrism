@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/login-style.css" type="text/css">
+</head>
+<body class="body">
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2 class="active">Sign In</h2>
+            <form action="" method="POST">
+                <div class="radio-group">
+                    <input type="radio" id="option-one" name="selector" value="1">
+                    <label for="option-one">Student</label>
+                    <input type="radio" id="option-two" name="selector" value="2">
+                    <label for="option-two">Professor</label>
+                    <input type="radio" id="option-three" name="selector" value="3">
+                    <label for="option-three">Admin</label>
+                </div>
+                <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+                <input type="password" id="password" class="fadeIn third" name="pass" placeholder="Password">
+                <h4 class="msg fadeIn fourth"><%= message %></h4>
+                <button type="submit" class="btn btn-primary text-center fadeIn fourth" style="margin-bottom: 30px; background-color: black;margin-top: 15px; padding:5px 15px;">LOG IN</button>
+            </form>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

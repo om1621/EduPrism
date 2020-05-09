@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/student_style.css" type="text/css">
+
+    <style>
+
+        @font-face {
+       font-family: 'CeraPro-black';
+       src: url(/assets/fonts/CeraPro-Black.ttf) format("truetype");
+       font-weight: bold;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-bold';
+       src: url(/assets/fonts/CeraPro-Bold.ttf) format("truetype");
+       font-weight: bold;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-regular';
+       src: url(/assets/fonts/CeraPro-Regular.ttf) format("truetype");
+       font-weight: 400;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-Thin';
+       src: url(/assets/fonts/CeraPro-Thin.ttf) format("truetype");
+       font-weight: 300;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-medium';
+       src: url(/assets/fonts/CeraPro-Medium.ttf) format("truetype");
+       font-weight: 500;
+       font-style: normal;
+   }
+
+   body
+   {
+       font-family: 'CeraPro-medium' !important;
+   }
+
+   .heading
+   {
+       width: 100%;
+       text-align: center;
+   }
+
+   .heading h1
+   {
+        font-family: 'CeraPro-bold';
+        font-size: 36px;
+   }
+
+   </style>
+
+</head>
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <div class="demo-drawer mdl-layout__drawer mdl-color-text--blue-grey-50">
+
+            <header class="demo-drawer-header">
+                <img src="/assets/img/logo.png" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+
+            <nav class="demo-navigation mdl-navigation">
+                <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">event_note</i>Grades</a>
+                <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Feedback</a>
+                <a class="mdl-navigation__link"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">cancel</i>Sign Out</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content mdl-color--grey-100">
+ 
+            <div class="mdl-grid demo-content" id="main-content">
+                <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col std-info" style="margin-left:auto; margin-right: auto;">
+
+                    <div class="heading">
+                        <h1>Update Basic Details</h1>
+                    </div>
+
+                   <form action="" method="POST">
+                       <div class="form-group">
+                           <label for="address">Enter new Address</label>
+                           <input type="text" id="address" name="new_add" class="form-control">
+                       </div>
+                       <div class="form-group">
+                            <label for="mobile">Enter new Mobile No</label>
+                            <input type="number" id="mobile" name="new_mob" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter new E-mail</label>
+                            <input type="text" id="email" name="new_email" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary float-left">Submit Changes</button>
+                   </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+   
+</body>
+</html>

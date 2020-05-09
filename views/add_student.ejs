@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Student</title>            
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/admin_style.css" type="text/css">
+    
+    <style>
+
+        @font-face {
+       font-family: 'CeraPro-black';
+       src: url(/assets/fonts/CeraPro-Black.ttf) format("truetype");
+       font-weight: bold;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-bold';
+       src: url(/assets/fonts/CeraPro-Bold.ttf) format("truetype");
+       font-weight: bold;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-regular';
+       src: url(/assets/fonts/CeraPro-Regular.ttf) format("truetype");
+       font-weight: 400;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-Thin';
+       src: url(/assets/fonts/CeraPro-Thin.ttf) format("truetype");
+       font-weight: 300;
+       font-style: normal;
+   }
+   
+   @font-face {
+       font-family: 'CeraPro-medium';
+       src: url(/assets/fonts/CeraPro-Medium.ttf) format("truetype");
+       font-weight: 500;
+       font-style: normal;
+   }
+
+   body{
+       font-family: 'CeraPro-medium' !important;
+   }
+
+   .heading h1
+   {
+       font-family: 'CeraPro-black' !important;
+       font-size: 40px;
+   }
+
+   .heading 
+   {
+       margin-bottom: 10px;
+   }
+
+   </style>
+
+</head>
+<body>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <div class="demo-drawer mdl-layout__drawer  mdl-color-text--blue-grey-50">
+            <header class="demo-drawer-header">
+                <img src="/assets/img/logo.png" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+            
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation " style=" font-family: 'CeraPro-medium' !important;">
+                <a class="mdl-navigation__link"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link" href="/addstudent"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person_add</i>Add Student</a>
+                <a class="mdl-navigation__link" href="/addfaculty"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person_add</i>Add Faculty</a>
+                <a class="mdl-navigation__link" href="/addcourse"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">note_add</i>Add
+                    Course</a>
+                <a class="mdl-navigation__link" href="/allocatecourse"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assignment</i>Allocate Course</a>
+                <a class="mdl-navigation__link" href="/sendupdate"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">announcement</i>Send Update</a>
+                <a class="mdl-navigation__link" href="/login"><i
+                        class="mdl-color-text--blue-grey-400 material-icons" role="presentation">cancel</i>Sign Out</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="container" style="margin-top: 1%;">
+                        <div class="heading">
+                            <h1>ADD STUDENT</h1>
+                        </div>
+                       <form action="" method="POST">
+                           <div class="form-group">
+                               <label for="name">Name</label>
+                               <input type="text" id="name" name="std_name" class="form-control" placeholder="Onkar Telange">
+                           </div>
+                           <div class="form-group">
+                               <label for="id">Enrollment No</label>
+                               <input type="text" id="id" name="std_id" class="form-control" placeholder="IIT2018065">
+                           </div>
+                           <div class="form-group">
+                               <label for="address">Address</label>
+                                <textarea name="std_addr" id="address" rows="3" class="form-control" placeholder="Bh2 , IIITA , Prayagraj - 211012. "></textarea>
+                           </div>
+                           <div class="form-group">
+                               <label for="">Date of Birth</label>
+                               <div class="row">
+                                    <div class="col-sm-3">
+                                        <input type="number" id="day" name="b_day" class="form-control" placeholder="DD">
+                                    </div>
+                                    <div class="col-sm-3">
+                                    <input type="number" id="day" name="b_month" class="form-control" placeholder="MM">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" id="day" name="b_year" class="form-control" placeholder="YYYY">
+                                    </div>
+                               </div>
+                              
+                           </div>
+                           <div class="form-group">
+                               <label for="branch">Branch</label>
+                               <select name="std_branch" id="branch" class="form-control">
+                                   <option value="IT">IT</option>
+                                   <option value="ECE">ECE</option>
+                               </select>
+                           </div>
+                           <div class="form-group">
+                               <label for="mobile">Mobile No</label>
+                               <input type="tel" id="mobile" name="std_mob" class="form-control" placeholder="+91-9111167890">
+                           </div>
+                           <div class="form-group">
+                               <label for="Email">E-mail id</label>
+                               <input type="email" name="std_email" id="Email" class="form-control" placeholder="xyz@gmail.com">
+                           </div>
+                           <button type="submit" class="btn btn-primary float-left">SUBMIT</button>
+                       </form>
+            </div>
+        </main>
+
+
+    </div>
+</body>
+</html>
